@@ -1,0 +1,32 @@
+Roles:
+- Alpha scrublord (Red)
+  - Admin
+
+- Moderator
+  - Access to mod chat
+  - View Audit Log
+  - Kick and Ban
+  - Manage Messages
+  - Mention Everyone
+  - Mute, Deafen & Move in voice
+
+- Nerd (Blue)
+  - Cosmetic Rank level 3
+  - Access to specl-peopl chats
+- Memester (Green)
+  - Cosmetic Rank level 2
+  - Access to specl-peopl chats
+- Phobnibit (Brown)
+  - Cosmetic Rank level 1
+  - Access to specl-peopl chats
+
+- Roboidz (Purple)
+  - Cosmetic role for bots
+
+- Scrubs (Default)
+  - Access to basic chats
+  - Create invite
+  - Read, Send & Send TTS messages
+  - React
+  - Connect & Speak
+  - Use voice Activity

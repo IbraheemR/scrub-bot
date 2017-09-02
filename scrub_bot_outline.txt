@@ -1,0 +1,37 @@
+&rules
+  PM's rules to user
+
+&help
+  PM's help to user
+
+
+
+&badge :emoji: @user
+  Award badge to person (must be alpha)
+
+&listen str
+  listen and notify alpha of user saying string
+
+&listenend
+
+&censor str
+  listen and censor string and notify alpha
+
+&censcorend
+
+
+
+
+Accepting rules
+  Promote to scrub
+  Name w/ emoji -> Nick without emoji
+
+
+Need to re-find rules message when restart
+
+
+&balance
+  Shows how much currency you have (paperclips)
+
+&give amount @user
+  Give user an 'amount' of paperclips
