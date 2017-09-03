@@ -66,7 +66,7 @@ async def clear(message, keywords):
 
             log.log(0, "Cleared %s messages from channel #%s:%s, at request of @%s:%s" % (amount, message.channel.name, message.channel.id, message.author.name, message.author.id))
 
-        except (IndexError, AttributeError, ValueError):
+        except (ValueError):
             raise utils.ArgumentError(None, message)
     else:
         raise utils.PermissionError("permissions.manage_messages", message)
@@ -88,7 +88,7 @@ async def clense(message, keywords):
 
             log.log(0, "Clensed %s messages from channel #%s:%s, at request of @%s:%s" % (amount, message.channel.name, message.channel.id, message.author.name, message.author.id))
 
-        except (IndexError, AttributeError, ValueError):
+        except (ValueError):
             raise utils.ArgumentError(None, message)
     else:
         raise utils.PermissionError("permissions.manage_messages", message)
