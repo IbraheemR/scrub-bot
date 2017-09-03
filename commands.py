@@ -80,7 +80,7 @@ async def clense(message, keywords):
             if amount <= 0:
                 raise ValueError
 
-            await client.purge_from(message.channel, limit=amount+1)
+            await client.purge_from(message.channel, limit=amount+1, check=lambda m: m.author.bot)
 
             log.log(0, "Clensed %s messages from channel #%s:%s, at request of @%s:%s" % (amount, message.channel.name, message.channel.id, message.author.name, message.author.id))
 
