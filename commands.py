@@ -19,7 +19,7 @@ async def accept(user):
 
 
 
-async def rules(message, keywords):
+async def ping(message, keywords):
     await client.send_message(message.channel, "P%sng!" % random.choice("aeouy"))
 
 async def rules(message, keywords):
