@@ -29,7 +29,8 @@ async def on_message(message):
         command, *keywords = c.split(" ")
 
         try:
-            if   command == "rules":   await commands.rules(message, keywords)
+            if   command == "ping":    await commands.ping(message, keywords)
+            elif command == "rules":   await commands.rules(message, keywords)
             elif command == "help":    await commands.help_(message, keywords)
             elif command == "badge":   await commands.badge(message, keywords)
             elif command == "clear":   await commands.clear(message, keywords)

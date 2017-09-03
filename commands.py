@@ -18,6 +18,10 @@ async def accept(user):
     await client.add_roles(user, role)
 
 
+
+async def rules(message, keywords):
+    await client.send_message(message.channel, "P%sng!" % random.choice("aeouy"))
+
 async def rules(message, keywords):
     await client.send_message(message.author, embed=res.PMs.rules())
     await client.send_message(message.channel, embed=res.info.rulesSM(message.author))
