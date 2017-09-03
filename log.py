@@ -17,3 +17,4 @@ def log(mesgType, message):
 
     with open("serverLog.log", 'a') as log:
         log.write(tolog)
+        print(tolog)
