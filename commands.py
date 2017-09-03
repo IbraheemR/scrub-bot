@@ -68,23 +68,27 @@ async def clear(message, keywords):
         raise utils.PermissionError("permissions.manage_messages", message)
 
 async def clense(message, keywords):
-    if message.channel.permissions_for(message.author).administrator:
+    if message.channel.permissions_for(message.author).manage_messages:
         try:
-            badge = keywords[0]
-            user_id = ''.join(filter(lambda x: x.isdigit(), keywords[1]))
+            amount = 100
+            try:
+                amount = int(keywords[0])
 
-            user = server.get_member(user_id)
+            except IndexError:
+                pass
 
-            nick  = user.nick if user.nick else user.name
+            if amount <= 0:
+                raise ValueError
 
-            await client.change_nickname(user, badge + nick)
+            await client.purge_from(message.channel, limit=amount, check=lambda m: m.bot)
 
-            log.log(0, "Shamed user @%s:%s with %s " % (user.name, user.id, badge))
+            log.log(0, "Clensed %s messages from channel <#%s:%s>, at request of @%s:%s" % (amount, message.channel.name, message.channel.id, message.author.name, message.author.id))
 
-        except (IndexError, AttributeError):
+        except (IndexError, AttributeError, ValueError):
             raise utils.ArgumentError(None, message)
     else:
-        raise utils.PermissionError("permissions.administrator", message)
+        raise utils.PermissionError("permissions.manage_messages", message)
+
 async def shame(message, keywords):
     pass
 
