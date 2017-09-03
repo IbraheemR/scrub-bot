@@ -60,7 +60,7 @@ async def clear(message, keywords):
 
             await client.purge_from(message.channel, limit=amount+1)
 
-            log.log(0, "Cleared %s messages from channel <#%s:%s>, at request of @%s:%s" % (amount, message.channel.name, message.channel.id, message.author.name, message.author.id))
+            log.log(0, "Cleared %s messages from channel #%s:%s, at request of @%s:%s" % (amount, message.channel.name, message.channel.id, message.author.name, message.author.id))
 
         except (IndexError, AttributeError, ValueError):
             raise utils.ArgumentError(None, message)
@@ -80,9 +80,9 @@ async def clense(message, keywords):
             if amount <= 0:
                 raise ValueError
 
-            await client.purge_from(message.channel, limit=amount, check=lambda m: m.bot)
+            await client.purge_from(message.channel, limit=amount+1)
 
-            log.log(0, "Clensed %s messages from channel <#%s:%s>, at request of @%s:%s" % (amount, message.channel.name, message.channel.id, message.author.name, message.author.id))
+            log.log(0, "Clensed %s messages from channel #%s:%s, at request of @%s:%s" % (amount, message.channel.name, message.channel.id, message.author.name, message.author.id))
 
         except (IndexError, AttributeError, ValueError):
             raise utils.ArgumentError(None, message)
