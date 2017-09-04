@@ -66,7 +66,7 @@ SMs.rulesSM = createEmbed(
     [ "```1) Mild swearing is allowed, but please keep it to a minimum\n2) No NSFW anywhere pls\n3) No dox/other people's personal info unless you have permission from the relevant person\n4)No spam/uneccessarily promoting yourself/other things```",
       "```Each time you break a rule, you will get a warn (lifted at then end of the month)\n3 warns will result in a kick (forgotten each equinox) and a demotion\nA further offence will then result in a ban.\nAny appeals can be made in #appeals```",
      u"```\u2022 Please keep bot commands in the #bot-stuff channel only\u2022 Mods have the \U0001F4CE badge\n\u2022 Mods may break rules to a certain extent, but are not allowed to over do it.```",
-     "```React with :b: to accept and join the server```"]
+     u"```React with 🅱️ to accept and join the server```"]
 )
 
 info = EMap()
