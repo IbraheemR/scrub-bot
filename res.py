@@ -42,10 +42,12 @@ PMs = EMap()
 PMs.rules = createEmbed(
     color.info,
     ["RULES",
+     "BANS, WARNS, etc."
      "OTHER STUFF"],
 
-    [ "```1) Mild swearing is allowed, but please keep it to a minimum\n2) No NSFW anywhere pls\n3) No dox/other people's personal info unless you have permission from the relevant person```",
-     u"```\u2022 Please keep bot commands in the #bot-stuff channel only\u2022 Mods have the \U0001F4CE badge\n\u2022 Mods may break rules to a certain extent,\n  but are not allowed to over do it.```",]
+    [ "```1) Mild swearing is allowed, but please keep it to a minimum\n2) No NSFW anywhere pls\n3) No dox/other people's personal info unless you have permission from the relevant person\n4)No spam/uneccessarily promoting yourself/other things```",
+      "```Each time you break a rule, you will get a warn (lifted at then end of the month)\n3 warns will result in a kick (lifted each equinox) and a demotion\nA further offence will then result in a ban.\nAny appeals can be made in #appeals"```""
+     u"```\u2022 Please keep bot commands in the #bot-stuff channel only\u2022 Mods have the \U0001F4CE badge\n\u2022 Mods may break rules to a certain extent, but are not allowed to over do it.```"]
 )
 PMs.help = createEmbed(
     color.info,
@@ -57,11 +59,13 @@ SMs = EMap()
 SMs.rulesSM = createEmbed(
     color.info,
     ["RULES",
+     "BANS, WARNS, etc."
      "OTHER STUFF",
      "TO ACCEPT"],
 
-    [ "```1) Mild swearing is allowed, but please keep it to a minimum\n2) No NSFW anywhere pls\n3) No dox/other people's personal info unless you have permission from the relevant person```",
-     u"```\u2022 Please keep bot commands in the #bot-stuff channel only\u2022 Mods have the \U0001F4CE badge\n\u2022 Mods may break rules to a certain extent,\n  but are not allowed to over do it.```",
+    [ "```1) Mild swearing is allowed, but please keep it to a minimum\n2) No NSFW anywhere pls\n3) No dox/other people's personal info unless you have permission from the relevant person\n4)No spam/uneccessarily promoting yourself/other things```",
+      "```Each time you break a rule, you will get a warn (lifted at then end of the month)\n3 warns will result in a kick (lifted each equinox) and a demotion\nA further offence will then result in a ban.\nAny appeals can be made in #appeals"```""
+     u"```\u2022 Please keep bot commands in the #bot-stuff channel only\u2022 Mods have the \U0001F4CE badge\n\u2022 Mods may break rules to a certain extent, but are not allowed to over do it.```",
      "```React with :b: to accept and join the server```"]
 )
 
