@@ -42,7 +42,7 @@ PMs = EMap()
 PMs.rules = createEmbed(
     color.info,
     ["RULES",
-     "BANS, WARNS, etc."
+     "BANS, WARNS, etc.",
      "OTHER STUFF"],
 
     [ "```1) Mild swearing is allowed, but please keep it to a minimum\n2) No NSFW anywhere pls\n3) No dox/other people's personal info unless you have permission from the relevant person\n4)No spam/uneccessarily promoting yourself/other things```",
@@ -59,7 +59,7 @@ SMs = EMap()
 SMs.rulesSM = createEmbed(
     color.info,
     ["RULES",
-     "BANS, WARNS, etc."
+     "BANS, WARNS, etc.",
      "OTHER STUFF",
      "TO ACCEPT"],
 
