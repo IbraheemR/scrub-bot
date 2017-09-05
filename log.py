@@ -13,7 +13,7 @@ states = {
 def log(mesgType, message):
 
     timestamp = datetime.datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S')
-    mesgType = states[mesgType] if type(mesgType) == int else raise ValueError("Bad Message Type")
+    mesgType = states[mesgType] if type(mesgType) == int else mesgType
 
     if mesgType == "raw":
         tolog = "\n\n@%s(UTC) : %s : \'%s\'\n\n\n" % (timestamp, mesgType, message)
