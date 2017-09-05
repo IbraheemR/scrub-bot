@@ -24,7 +24,7 @@ async def ping(message, keywords):
 
 async def error(message, keywords):
     if message.channel.permissions_for(message.author).administrator:
-        raise Exception
+        raise Exception("Test")
     else:
         raise utils.PermissionError("permissions.administrator", message)
 
