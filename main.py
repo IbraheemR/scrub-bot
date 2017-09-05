@@ -57,7 +57,7 @@ async def on_message(message):
                 await commands.send_unimplemented_error(message, error)
 
     except Exception as error:
-        await client.send_message(client.get_channel(res.channel_ids.general), embed=res.fail.internal(error))
+        await client.send_message(message.channel, embed=res.fail.internal(error))
         log.log("-1", repr(error))
         raise e
 
