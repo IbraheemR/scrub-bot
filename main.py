@@ -59,7 +59,7 @@ async def on_message(message):
     except Exception as error:
         await client.send_message(message.channel, embed=res.fail.internal(error))
         log.log("-1", repr(error))
-        raise e
+        raise error
 
 @client.event
 async def on_reaction_add(reaction, user):
