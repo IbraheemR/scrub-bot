@@ -16,7 +16,7 @@ def log(mesgType, message):
     mesgType = states[mesgType] if type(mesgType) == int else mesgType
 
     if mesgType == "raw":
-        tolog = "\n\n@%s(UTC) : %s : \'%s\'\n\n\n" % (timestamp, mesgType, message)
+        tolog = "\n\n@%s(UTC) : raw : \'%s\'\n\n\n" % (timestamp, message)
     else:
         tolog = "@%s(UTC) : %s : \'%s\'\n" % (timestamp, mesgType, message)
 
