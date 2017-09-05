@@ -58,6 +58,7 @@ async def on_message(message):
 
     except Exception as error:
         await client.send_message(client.get_channel(res.channel_ids.general), embed=res.fail.internal(error))
+        log.log("-1", repr(e))
         raise e
 
 @client.event
