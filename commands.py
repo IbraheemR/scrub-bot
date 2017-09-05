@@ -22,6 +22,12 @@ async def accept(user):
 async def ping(message, keywords):
     await client.send_message(message.channel, "P%sng!" % random.choice("aeouy"))
 
+async def error(message, keywords):
+    if message.channel.permissions_for(message.author).administrator:
+        raise Exception
+    else:
+        raise utils.PermissionError("permissions.administrator", message)
+
 async def rules(message, keywords):
     await client.send_message(message.author, embed=res.PMs.rules())
     await client.send_message(message.channel, embed=res.info.rulesSM(message.author))
