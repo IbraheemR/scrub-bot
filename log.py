@@ -1,7 +1,7 @@
 import io, datetime
 
 states = {
-    -1 : "raw"
+    -1 : "raw",
 
     0 : "info  ",
     1 : "warn  ",
