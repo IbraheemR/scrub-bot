@@ -14,9 +14,9 @@ async def setup_accept(channel):
     res.global_vars.accept_id = msg.id
 
 async def accept(user):
+
     role = discord.utils.find(lambda r: r.id == res.role_ids.scrub, server.roles)
     await client.add_roles(user, role)
-
 
 
 async def ping(message, keywords):
@@ -27,10 +27,6 @@ async def error(message, keywords):
         raise Exception("Test")
     else:
         raise utils.PermissionError("permissions.administrator", message)
-
-async def rules(message, keywords):
-    await client.send_message(message.author, embed=res.PMs.rules())
-    await client.send_message(message.channel, embed=res.info.rulesSM(message.author))
 
 async def help_(message, keywords):
     await client.send_message(message.author, embed=res.PMs.help())

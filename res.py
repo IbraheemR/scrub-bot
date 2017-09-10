@@ -13,11 +13,14 @@ global_vars = Map()
 server_id = "346608557749174273"
 
 channel_ids = Map()
-channel_ids.rules = "346613329957093376"
+channel_ids.info = "346613329957093376"
+channel_ids.anouncements = ""
+channel_ids.quest_discussion = ""
 channel_ids.general = "346614225294065664"
 channel_ids.specl_pepl_chat = "346615244254216193"
-channel_ids.bot_stuff = "346630488888311809"
 channel_ids.moderator_chat = "347014222074347522"
+channel_ids.test_place = "346630488888311809"
+channel_ids.bot_stuff = "346630488888311809"
 channel_ids.quests = "347356077735542785"
 channel_ids.test_place = "347367928812797953"
 
@@ -39,16 +42,6 @@ custom_emoji.clippy = "346766471457931276"
 custom_emoji.modbadge = "347442050204958740"
 
 PMs = EMap()
-PMs.rules = createEmbed(
-    color.info,
-    ["RULES",
-     "BANS, WARNS, etc.",
-     "OTHER STUFF"],
-
-    [ "```1) Mild swearing is allowed, but please keep it to a minimum\n2) No NSFW anywhere pls\n3) No dox/other people's personal info unless you have permission from the relevant person\n4)No spam/uneccessarily promoting yourself/other things```",
-      "```Each time you break a rule, you will get a warn (lifted at then end of the month)\n3 warns will result in a kick (forgotten each equinox) and a demotion\nA further offence will then result in a ban.\nAny appeals can be made in #appeals```",
-     u"```\u2022 Please keep bot commands in the #bot-stuff channel only\u2022 Mods have the \U0001F4CE badge\n\u2022 Mods may break rules to a certain extent, but are not allowed to over do it.```"]
-)
 PMs.help = createEmbed(
     color.info,
     ["GENERIC HELP"],
@@ -60,13 +53,15 @@ SMs.rulesSM = createEmbed(
     color.info,
     ["RULES",
      "BANS, WARNS, etc.",
+     "BADGES",
      "OTHER STUFF",
      "TO ACCEPT"],
 
-    [ "```1) Mild swearing is allowed, but please keep it to a minimum\n2) No NSFW anywhere pls\n3) No dox/other people's personal info unless you have permission from the relevant person\n4)No spam/uneccessarily promoting yourself/other things```",
-      "```Each time you break a rule, you will get a warn (lifted at then end of the month)\n3 warns will result in a kick (forgotten each equinox) and a demotion\nA further offence will then result in a ban.\nAny appeals can be made in #appeals```",
-     u"```\u2022 Please relevant stuff in correct channel (#bot-stuff for bot commands, #appeals for appeals etc)\n\u2022 Mods have the \U0001F4CE badge\n\u2022 Mods may break rules to a certain extent, but are not allowed to over do it.```",
-     u"```React with🅱️ to accept and join the server```"]
+    [ "1) Mild swearing is allowed, but please keep it to a minimum\n2) No NSFW anywhere pls\n3) No dox/other people's personal info unless you have permission from the relevant person\n4)No spam/uneccessarily promoting yourself/other things",
+     u"•Each time you break a rule, you will get a warn \n•3 Warns will result in a 10 day ban\n•A further offence within 2 months will result in a perm ban\n•Warns reset after a month\n•Any appeals can be made in #appeals",
+     u"\•🎲 Founder \n\•📎 Moderator \n\•🍆 🌀 🅱️ etc. Quest Rewards", 
+     u"• Please relevant stuff in correct channel (#bot-stuff for bot commands, #appeals for appeals etc)\n• Mods may break rules to a certain extent, but are not allowed to over do it.",
+     u"React with 🅱️ to accept and join the server"]
 )
 
 info = EMap()
