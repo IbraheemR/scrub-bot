@@ -1,4 +1,4 @@
-import discord, asyncio, time, random, sched
+import discord, asyncio, time, random, sched, sqlite3
 from discord.ext import commands
 from discord.ext.commands import Bot
 
@@ -7,6 +7,16 @@ import res, utils, log, commands
 
 client = Bot(command_prefix="&")
 commands.client = client
+
+#Connect to data.db
+data = sqlite3.connect("data.db")
+cursor = data.cursor()
+
+commands.data  = data
+commands.cursor = cursor
+
+
+
 
 @client.event
 async def on_ready():

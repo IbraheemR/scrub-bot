@@ -60,7 +60,7 @@ SMs.rulesSM = createEmbed(
     [ "1) Mild swearing is allowed, but please keep it to a minimum\n2) No NSFW anywhere pls\n3) No dox/other people's personal info unless you have permission from the relevant person\n4)No spam/uneccessarily promoting yourself/other things",
      u"•Each time you break a rule, you will get a warn \n•3 Warns will result in a 10 day ban\n•A further offence within 2 months will result in a perm ban\n•Warns reset after a month\n•Any appeals can be made in #appeals",
      u"\•🎲 Founder \n\•📎 Moderator \n\•🍆 🌀 🅱️ etc. Quest Rewards", 
-     u"• Please relevant stuff in correct channel (#bot-stuff for bot commands, #appeals for appeals etc)\n• Mods may break rules to a certain extent, but are not allowed to over do it.",
+     u"• Please keep relevant stuff in correct channel (#bot-stuff for bot commands, #appeals for appeals etc)\n• Mods may break rules to a certain extent, but are not allowed to over do it.",
      u"React with 🅱️ to accept and join the server"]
 )
 

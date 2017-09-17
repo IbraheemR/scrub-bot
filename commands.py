@@ -1,9 +1,12 @@
-import discord, asyncio, time, random
+import discord, asyncio, time, random, sqlite3
 
 import utils, res, log
 
 client = None
 server = None
+
+data = None
+cursor = None
 
 
 async def setup_accept(channel):
